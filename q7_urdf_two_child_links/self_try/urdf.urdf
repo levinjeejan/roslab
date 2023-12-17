@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<robot name="my_robo">
+  <link name="base_link">
+    <visual>
+      <origin xyz="0 0 2" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="2" length="4"/>
+      </geometry>
+      <material name="red">
+        <color rgba="1 0 0 1"/>
+      </material>
+    </visual>
+  </link>
+  <link name="link1">
+    <visual>
+      <origin xyz="2 0 1.5" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="1" length="3"/>
+      </geometry>
+      <material name="white">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+  </link>
+  <link name="link2">
+    <visual>
+      <origin xyz="-2 0 1.5" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="1" length="3"/>
+      </geometry>
+      <material name="white"/>
+    </visual>
+  </link>
+  <joint name="joint1" type="fixed">
+    <parent link="base_link"/>
+    <child link="link1"/>
+    <origin xyz="1 0 1.5" rpy="0 0 0"/>
+  </joint>
+  <joint name="joint2" type="fixed">
+    <parent link="link1"/>
+    <child link="link2"/>
+    <origin xyz="1 0 1.5" rpy="0 0 0"/>
+  </joint>
+</robot>
+

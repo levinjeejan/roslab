@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<robot name="rectangle">
+  <material name="yellow">
+    <color rgba="1 1 0 1"/>
+  </material>
+  <link name="rectangle_link">
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <box size="2 5 9"/>
+      </geometry>
+      <material name="yellow"/>
+    </visual>
+  </link>
+</robot>

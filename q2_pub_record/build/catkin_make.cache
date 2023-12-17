@@ -1,0 +1,2 @@
+q2
+-DCATKIN_DEVEL_PREFIX=/home/levin/Lab_exam_s5/qus2/devel -DCMAKE_INSTALL_PREFIX=/home/levin/Lab_exam_s5/qus2/install -G Unix Makefiles

@@ -1,0 +1,5 @@
+digraph G {
+node [shape=box];
+"sphere" [label="sphere"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+}

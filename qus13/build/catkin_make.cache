@@ -1,0 +1,2 @@
+turtlebot3_simulations/turtlebot3_fake:turtlebot3_simulations/turtlebot3_gazebo:turtlebot3_simulations/turtlebot3_simulations
+-DCATKIN_DEVEL_PREFIX=/home/levin/Lab_exam_s5/qus13/devel -DCMAKE_INSTALL_PREFIX=/home/levin/Lab_exam_s5/qus13/install -G Unix Makefiles
