@@ -1,0 +1,7 @@
+roscore
+ros run turtlesim turtlesim_node
+rostopic  list
+rostopic info
+rostopic p
+-r 1 -- '[2.0,0.0,0.0]' '[0.0,0.0,-1.8]'
+rosbag record and play
