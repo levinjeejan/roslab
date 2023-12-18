@@ -1,0 +1,2 @@
+turtlebot3_simulations/turtlebot3_fake:turtlebot3_simulations/turtlebot3_gazebo:turtlebot3_simulations/turtlebot3_simulations
+-DCATKIN_DEVEL_PREFIX=/home/levin/s5_roslab_exams/s5_roslab/q11_slam_map/devel -DCMAKE_INSTALL_PREFIX=/home/levin/s5_roslab_exams/s5_roslab/q11_slam_map/install -G Unix Makefiles

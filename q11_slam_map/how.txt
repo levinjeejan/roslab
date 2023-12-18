@@ -1,0 +1,37 @@
+cd ~/catkin_ws/src/
+$ git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+$ cd ~/catkin_ws && catkin_make
+
+Terminal 1>>
+
+cd catkin_ws/
+source devel/setup.bash
+export TURTLEBOT3_MODEL=burger
+roslaunch turtlebot3_gazebo turtlebot3_house.launch
+
+Terminal 2>>
+
+cd catkin_ws/
+source devel/setup.bash
+export TURTLEBOT3_MODEL=burger
+roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch (Manual control using keyboard)
+
+OR
+
+roslaunch turtlebot3_gazebo turtlebot3_simulation.launch(Autonomous Navigation)
+
+Terminal 3>>
+
+cd catkin_ws/
+source devel/setup.bash
+export TURTLEBOT3_MODEL=burger
+roslaunch turtlebot3_gazebo turtlebot3_gazebo_rviz.launch
+
+Terminal 4>>
+
+rosrun gmapping slam_gmapping scan:=/scan
+
+Terminal 5>>
+
+rosrun map_server map_saver -f mymap
+
