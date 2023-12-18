@@ -1,0 +1,2 @@
+learning_tf
+-DCATKIN_DEVEL_PREFIX=/home/levin/s5_roslab_exams/s5_roslab/q14_tf/devel -DCMAKE_INSTALL_PREFIX=/home/levin/s5_roslab_exams/s5_roslab/q14_tf/install -G Unix Makefiles

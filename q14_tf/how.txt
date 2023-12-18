@@ -1,0 +1,15 @@
+catkin_create_pkg learning_tf tf roscpp rospy turtlesim
+catkin_make
+source devel/setup.bash
+
+2. How to broadcast transforms
+roscd learning_tf
+mkdir nodes
+cd nodes
+gedit turtle_tf_broadcaster.py
+source devel/setup.bash
+roslaunch learning_tf start_demo.launch
+rosrun rviz rviz -d `rospack find turtle_tf`/rviz/turtle_rviz.rviz
+Using tf_echo
+rosrun tf tf_echo world turtle1
+chmod +x turtle_tf_listener.py
