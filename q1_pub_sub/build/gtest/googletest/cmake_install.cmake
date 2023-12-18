@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/levin/Lab_exam_s5/qus1/install")
+  set(CMAKE_INSTALL_PREFIX "/home/levin/s5_roslab_exams/s5_roslab/q1_pub_sub/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

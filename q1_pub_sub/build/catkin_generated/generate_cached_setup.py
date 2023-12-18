@@ -19,9 +19,9 @@ except ImportError:
             break
     from catkin.environment_cache import generate_environment_script
 
-code = generate_environment_script('/home/levin/Lab_exam_s5/qus1/devel/env.sh')
+code = generate_environment_script('/home/levin/s5_roslab_exams/s5_roslab/q1_pub_sub/devel/env.sh')
 
-output_filename = '/home/levin/Lab_exam_s5/qus1/build/catkin_generated/setup_cached.sh'
+output_filename = '/home/levin/s5_roslab_exams/s5_roslab/q1_pub_sub/build/catkin_generated/setup_cached.sh'
 with open(output_filename, 'w') as f:
     # print('Generate script for cached setup "%s"' % output_filename)
     f.write('\n'.join(code))

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/levin/Lab_exam_s5/qus1/src
+CMAKE_SOURCE_DIR = /home/levin/s5_roslab_exams/s5_roslab/q1_pub_sub/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/levin/Lab_exam_s5/qus1/build
+CMAKE_BINARY_DIR = /home/levin/s5_roslab_exams/s5_roslab/q1_pub_sub/build
 
 # Utility rule file for doxygen.
 
@@ -67,6 +67,6 @@ CMakeFiles/doxygen.dir/clean:
 .PHONY : CMakeFiles/doxygen.dir/clean
 
 CMakeFiles/doxygen.dir/depend:
-	cd /home/levin/Lab_exam_s5/qus1/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/levin/Lab_exam_s5/qus1/src /home/levin/Lab_exam_s5/qus1/src /home/levin/Lab_exam_s5/qus1/build /home/levin/Lab_exam_s5/qus1/build /home/levin/Lab_exam_s5/qus1/build/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/levin/s5_roslab_exams/s5_roslab/q1_pub_sub/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/levin/s5_roslab_exams/s5_roslab/q1_pub_sub/src /home/levin/s5_roslab_exams/s5_roslab/q1_pub_sub/src /home/levin/s5_roslab_exams/s5_roslab/q1_pub_sub/build /home/levin/s5_roslab_exams/s5_roslab/q1_pub_sub/build /home/levin/s5_roslab_exams/s5_roslab/q1_pub_sub/build/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/doxygen.dir/depend
 

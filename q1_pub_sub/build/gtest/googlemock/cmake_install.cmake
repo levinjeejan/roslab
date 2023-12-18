@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/levin/Lab_exam_s5/qus1/install")
+  set(CMAKE_INSTALL_PREFIX "/home/levin/s5_roslab_exams/s5_roslab/q1_pub_sub/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/levin/Lab_exam_s5/qus1/build/gtest/googletest/cmake_install.cmake")
+  include("/home/levin/s5_roslab_exams/s5_roslab/q1_pub_sub/build/gtest/googletest/cmake_install.cmake")
 
 endif()
 

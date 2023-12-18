@@ -7,7 +7,8 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/levin/Lab_exam_s5/qus1/devel:$CMAKE_PREFIX_PATH"
-export PWD='/home/levin/Lab_exam_s5/qus1/build'
-export ROSLISP_PACKAGE_DIRECTORIES='/home/levin/Lab_exam_s5/qus1/devel/share/common-lisp'
-export ROS_PACKAGE_PATH="/home/levin/Lab_exam_s5/qus1/src:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/levin/s5_roslab_exams/s5_roslab/q1_pub_sub/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/levin/s5_roslab_exams/s5_roslab/q1_pub_sub/devel/lib:$LD_LIBRARY_PATH"
+export PWD='/home/levin/s5_roslab_exams/s5_roslab/q1_pub_sub/build'
+export ROSLISP_PACKAGE_DIRECTORIES='/home/levin/s5_roslab_exams/s5_roslab/q1_pub_sub/devel/share/common-lisp'
+export ROS_PACKAGE_PATH="/home/levin/s5_roslab_exams/s5_roslab/q1_pub_sub/src:$ROS_PACKAGE_PATH"

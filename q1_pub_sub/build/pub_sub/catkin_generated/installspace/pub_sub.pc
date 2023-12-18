@@ -1,0 +1,8 @@
+prefix=/home/levin/s5_roslab_exams/s5_roslab/q1_pub_sub/install
+
+Name: pub_sub
+Description: Description of pub_sub
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

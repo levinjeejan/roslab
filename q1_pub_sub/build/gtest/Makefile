@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/levin/Lab_exam_s5/qus1/src
+CMAKE_SOURCE_DIR = /home/levin/s5_roslab_exams/s5_roslab/q1_pub_sub/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/levin/Lab_exam_s5/qus1/build
+CMAKE_BINARY_DIR = /home/levin/s5_roslab_exams/s5_roslab/q1_pub_sub/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/levin/Lab_exam_s5/qus1/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/levin/Lab_exam_s5/qus1/build/CMakeFiles /home/levin/Lab_exam_s5/qus1/build/gtest/CMakeFiles/progress.marks
-	cd /home/levin/Lab_exam_s5/qus1/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/levin/Lab_exam_s5/qus1/build/CMakeFiles 0
+	cd /home/levin/s5_roslab_exams/s5_roslab/q1_pub_sub/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/levin/s5_roslab_exams/s5_roslab/q1_pub_sub/build/CMakeFiles /home/levin/s5_roslab_exams/s5_roslab/q1_pub_sub/build/gtest/CMakeFiles/progress.marks
+	cd /home/levin/s5_roslab_exams/s5_roslab/q1_pub_sub/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/levin/s5_roslab_exams/s5_roslab/q1_pub_sub/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/levin/Lab_exam_s5/qus1/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/clean
+	cd /home/levin/s5_roslab_exams/s5_roslab/q1_pub_sub/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,17 +154,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/levin/Lab_exam_s5/qus1/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/preinstall
+	cd /home/levin/s5_roslab_exams/s5_roslab/q1_pub_sub/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/levin/Lab_exam_s5/qus1/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/preinstall
+	cd /home/levin/s5_roslab_exams/s5_roslab/q1_pub_sub/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/levin/Lab_exam_s5/qus1/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/levin/s5_roslab_exams/s5_roslab/q1_pub_sub/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -191,6 +191,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/levin/Lab_exam_s5/qus1/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/levin/s5_roslab_exams/s5_roslab/q1_pub_sub/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
