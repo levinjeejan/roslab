@@ -1,5 +1,7 @@
 roscore
-ros run turtlesim turtlesim_node
+rosrun turtlesim turtlesim_node
+rosrun turtlesim turtle_teleop_key(In a new terminal)
+rosrun rqt_graph rqt_graph(In a new terminal)
 rostopic  list
 rostopic info
 rostopic p
