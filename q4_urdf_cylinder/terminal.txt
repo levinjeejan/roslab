@@ -1,4 +1,0 @@
-check_urdf myfirst.urdf
-urdf_to_graphiz myfirst.urdf
-roslaunch urdf_tutorial display.launch model:=urdf/myfirst.urdf
-

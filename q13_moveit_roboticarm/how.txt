@@ -1,0 +1,83 @@
+Step 1: Start
+
+roslaunch moveit_setup_assistant setup_assistant.launch
+
+Click on the Create New MoveIt
+Load Files – Load a urdf
+
+Step 2: Generate Self-Collision Matrix
+
+Click on the Self-Collisions pane selector on the left-hand side and click on the Generate Collision
+Matrix button
+
+Step 3: Add Virtual Joints
+
+Click on Add Virtual Joint
+
+Set the joint name as “virtual_joint”
+Set the child link as “base_link” and the parent frame name as “world”.
+Set the Joint Type as “fixed”.
+Click Save and you should see this screen:
+
+Step 4: Add Planning Groups
+
+Click on Add Group
+Enter Group Name as robot_arm
+Choose kdl_kinematics_plugin/KDLKinematicsPlugin
+Group Default Planner – PRM
+click on the Add Joints button
+Click on the arm joints. Now click on the > button to add these joints into the list
+not add virtuan joint and fingers
+Click Save
+
+Add the gripper
+
+add a group for the end effector
+Add Group button.
+Let Kin. Search Resolution and Kin
+Click on the Add Links button.
+Click Save
+
+Step 5: Add Robot Poses
+Click Add Pose
+
+Click on the End Effectors pane.
+Click Add End Effector.
+Choose hand as the End Effector Name for the gripper.
+Select hand as the End Effector Group.
+Leave Parent Group blank.
+Click on Save
+
+Step 10: ROS Control
+
+Click on Add Controller
+Enter Controller Name as arm_position_controller
+Choose position_controllers/JointPositionController as the controller type
+Now, click on Add Planning Group Joints.
+
+Step 12: Generate Configuration Files
+
+Click on the Configuration Files pane. Choose a location and name
+Click on the Generate Package button.
+Exit Setup assistant
+
+cd ~/catkin_ws
+catkin_make
+cd src/robot_arm_moveit_config/launch
+roslaunch demo.launch
+
+Select Goal State as Random valid, the click Plan and Execute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
